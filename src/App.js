@@ -60,7 +60,7 @@ function App() {
   return (
     <div className="App">
       <h1>Pair Game</h1>
-      <h2>Turn : {turns}</h2>
+      <h2>Number of turns : {turns}</h2>
       <button onClick={shuffleCards}>New Game</button>
       <div className="card-field">
         {cards.map((card) => (
