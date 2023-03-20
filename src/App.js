@@ -8,6 +8,12 @@ const baseCards = [
   { src: "/img/icon-rifle.png", isGuessed: false },
   { src: "/img/icon-shotgun.png", isGuessed: false },
   { src: "/img/icon-swords.png", isGuessed: false },
+  { src: "/img/icon-armor.png", isGuessed: false },
+  { src: "/img/icon-boots.png", isGuessed: false },
+  { src: "/img/icon-club.png", isGuessed: false },
+  { src: "/img/icon-hands.png", isGuessed: false },
+  { src: "/img/icon-shield.png", isGuessed: false },
+  { src: "/img/icon-pad.png", isGuessed: false },
 ];
 function App() {
   const [cards, setCards] = useState([]);
@@ -21,7 +27,7 @@ function App() {
       .map((el) => ({ ...el, id: Math.random() }));
     clearSelection();
     setCards(newDeck);
-    setTurns(0)
+    setTurns(0);
   };
 
   const turnHandler = (card) => {
