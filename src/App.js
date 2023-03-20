@@ -67,7 +67,7 @@ function App() {
     <div className="App">
       <h1>Pair Game</h1>
       <h2>Number of turns : {turns}</h2>
-      <button onClick={shuffleCards}>New Game</button>
+      <button onClick={shuffleCards}>Start a new game</button>
       <div className="card-field">
         {cards.map((card) => (
           <CardItem
